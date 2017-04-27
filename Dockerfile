@@ -22,5 +22,4 @@ COPY openvpn.sh /usr/bin/
 
 VOLUME ["/vpn"]
 
-#ENTRYPOINT ["openvpn.sh"]
 ENTRYPOINT ["openvpn","--config","/vpn/vpn.ovpn"]
